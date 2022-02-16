@@ -1,0 +1,25 @@
+{
+  "name": "js-common-tool",
+  "version": "1.0.9",
+  "description": "",
+  "main": "index.js",
+  "typings": "types/index.d.ts",
+  "scripts": {
+    "bulid": "npx babel src/ --out-dir lib",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "npm install -g && npm run bulid && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/lym_ym_m/tools.git"
+  },
+  "keywords": [],
+  "author": "ym",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.10",
+    "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@babel/preset-env": "^7.16.10"
+  }
+}
