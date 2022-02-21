@@ -9,6 +9,7 @@ import {binarySearch} from "./src/BinarySearch";
 import {fibSearch} from "./src/FibSearch";
 import {groupBy} from "./src/GroupBy";
 import {mergeSort} from "./src/MergeSort";
+import {debounce} from "./types/debounce";
 
 export {
     deepClone,
@@ -22,4 +23,5 @@ export {
     fibSearch,
     groupBy,
     mergeSort,
+    debounce,
 }
