@@ -5,6 +5,7 @@ import {binarySearch, fastSort} from "../../index";
 import {fibSearch} from "../../src/FibSearch";
 import {groupBy} from "../../src/GroupBy";
 import {mergeSort} from "../../src/MergeSort";
+import {bfs} from "../../src/BFS";
 
 /*  -----------------深拷贝-----------------------  */
 const map = new Map();
@@ -124,3 +125,42 @@ const groupData = [
 /*  -----------------归并排序-----------------------  */
 const mergeData = [1,6,9,45,7,3,6,7];
 // console.log(mergeSort(mergeData));
+
+/*  -----------------dfs-----------------------  */
+const dfsData = {
+    value: 'A',
+    children: [
+        {
+            value: 'B',
+            children: [
+                {
+                    value: 'D',
+                    children: [
+                        {
+                            value: 'H',
+                            children: []
+                        }
+                    ]
+                },
+                {
+                    value: 'E',
+                    children: []
+                }
+            ]
+        },
+        {
+            value: 'C',
+            children: [
+                {
+                    value: 'F',
+                    children: []
+                },
+                {
+                    value: 'G',
+                    children: []
+                }
+            ]
+        }
+    ]
+}
+console.log(bfs(dfsData));
