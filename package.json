@@ -7,7 +7,8 @@
   "scripts": {
     "bulid": "npx babel src/ --out-dir lib",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "publish": "npm install -g && npm run bulid && npm publish"
+    "publish": "npm install -g && npm run bulid && npm publish",
+    "jest": "jest"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
     "@babel/cli": "^7.16.8",
     "@babel/core": "^7.16.10",
     "@babel/plugin-proposal-class-properties": "^7.16.7",
-    "@babel/preset-env": "^7.16.10"
+    "@babel/preset-env": "^7.16.10",
+    "jest": "^26.4.2"
   }
 }
